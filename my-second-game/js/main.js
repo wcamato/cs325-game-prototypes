@@ -21,15 +21,15 @@ class MyScene extends Phaser.Scene {
     
     preload() {
         // Load an image and call it 'logo'.
-        this.load.image( 'logo', 'assets/phaser.png' );
+        this.load.image( 'dude', 'assets/bikkuriman.png' );
     }
     
     create() {
         // Create a sprite at the center of the screen using the 'logo' image.
-        this.bouncy = this.physics.add.sprite( this.cameras.main.centerX, this.cameras.main.centerX, 'logo' );
-        
+        //this.bouncy = this.physics.add.sprite( this.cameras.main.centerX, this.cameras.main.centerX, 'logo' );
+        this.add.image(200,500,'dude');
         // Make it bounce off of the world bounds.
-        this.bouncy.body.collideWorldBounds = true;
+        //this.bouncy.body.collideWorldBounds = true;
         
         // Make the camera shake when clicking/tapping on it.
         this.bouncy.setInteractive();
@@ -39,9 +39,9 @@ class MyScene extends Phaser.Scene {
         
         // Add some text using a CSS style.
         // Center it in X, and position its top 15 pixels from the top of the world.
-        let style = { font: "25px Verdana", fill: "#9999ff", align: "center" };
-        let text = this.add.text( this.cameras.main.centerX, 15, "Build something amazing.", style );
-        text.setOrigin( 0.5, 0.0 );
+        //let style = { font: "25px Verdana", fill: "#9999ff", align: "center" };
+        //let text = this.add.text( this.cameras.main.centerX, 15, "Build something amazing.", style );
+        //text.setOrigin( 0.5, 0.0 );
     }
     
     update() {
@@ -60,5 +60,6 @@ const game = new Phaser.Game({
     width: 800,
     height: 600,
     scene: MyScene,
+	backgroundColor: 0x444444,
     physics: { default: 'arcade' },
     });
