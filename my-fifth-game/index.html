@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Space Guy Collects Things</title>
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Collect things then reload!</h2>
+
+<ul>
+<li><strong>Originality:</strong>
+Not much, I just wanted to get the hang of Phaser, and js. 
+On my iteration I added background music and also a mechanic that speeds the 
+character up as they collect more diamonds. I also added text that displays after 
+all the diamonds are collected so that the game has some sort of end state and 
+the player can restart to play again. I also added a background space image so that 
+the game would look more produced and less janky.
+</li>
+
+<li><strong>Technical Merit:</strong>
+Learning to give control to the player through WASD control was important for me because I've never felt that arrow key movement feels very good in games.
+</li>
+
+<li><strong>Prototype Postmortem:</strong>
+I learned a lot about Phaser and js, which will help me with future games.
+The hardest part was making the character and diamonds overlap and call the function to add points and play the ding.
+For whatever reason I still cannot restart the game a legitimate way. I looked at a bunch of different tutorials on how to restart but none of them worked.
+</li>
+
+<li><strong>Prototype Assets:</strong>
+I used itch.io for some free assets (such as the sprite and diamonds, and I found the sound clip on YouTube.
+The background music was found on itch.io and it is done by Nicole Marie T.
+Link to my original game: <a href="https://wcamato.github.io/cs325-game-prototypes/my-third-game">Digital Assignment 2</a>
+
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+I used the phaser tutorial for a lot of it (I think its called 'My First Game'). There was another Phaser tutorial that helped me with WASD control.
+</li>
+
+<li><strong>High Concept:</strong>
+Collect the diamonds and get 1000 points.
+</li>
+
+<li><strong>Theme:</strong>
+I think oasis fits pretty well, the little sprite is floating around in space collecting things. After he collects them all he is able to chill.
+</li>
+
+<li><strong>Mandated Variety:</strong>
+The input is keyboard and I would say direct.
+</li>
+
+<li><strong>Prototype Goal:</strong>
+For me its best asset is the WASD control.
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I'd like players of this game to be wowed by how incredibly underwhelming someones first game can be.
+</li>
+
+<li><strong>Gameplay:</strong>
+The gameplay is a simple loop of collecting the randomly generated diamonds that appear on your screen. I couldn't figure it all out but in a perfect world I would have more control over placements of diamonds a fail state and a splash screen for winning.
+</li>
+
+<li><strong>Strategies:</strong>
+Collect all the diamonds and then reload for more diamond collecting.
+</li>
+
+<li><strong>Story/Setting/Premise:</strong>
+My character is a lonely dude in space, looking for things to pass the time. While being stranded in space, he has become exceptionally good at collecting the space trash (diamonds) around him.
+</li>
+
+<li><strong>Target Audience:</strong>
+I think anyone could play this game, there isn't much too it.
+</li>
+
+<li><strong>Play Time:</strong>
+Honestly less than a minute.
+</li>
+
+</ul>
+</div>
+
+<!-- main.js must come at the end since it expects the HTML to have been created. -->
+<script src="js/main.js" type="module"></script>
+</body>
+</html>
